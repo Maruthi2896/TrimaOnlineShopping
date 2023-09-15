@@ -31,12 +31,12 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
                   <div className="detail">
                     <h4>{e.Cat}</h4>
                     <h2>{e.Title}</h2>
-                    <p>A screen</p>
+                    {/* <p>A screen</p> */}
                     <h3>
                       <FaRupeeSign />
                       {e.Price}
                     </h3>
-                    <button> Add To Cart</button>
+                    <button onClick={()=>addtocart(e)}> Add To Cart</button>
                   </div>
                 </div>
               );
