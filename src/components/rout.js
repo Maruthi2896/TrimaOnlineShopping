@@ -4,6 +4,7 @@ import Home from "./home";
 import Product from "./product";
 import Cart from "./cart";
 import Contact from "./contact";
+import Developer from "./developer";
 const Rout = ({
   product,
   setProduct,
@@ -46,6 +47,7 @@ const Rout = ({
         />
         <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/developer" element={<Developer />} />
       </Routes>
     </>
   );

@@ -1,29 +1,36 @@
-.profile .propimage img {
-    width:40%;
-    padding:20px 40px;
-    margin:10px 20px;
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
 }
 .profile{
-   margin-left: 40%;
+padding: 40px 50px;
+width:100%;
+background: #f1f1f1;
+border-bottom:1px solid #9a9a9a;
 }
-h2,h4{
-    width:40%;
-    margin:0px 70px;
+.profile .pimage img{
+    width:40%
 }
-p {
-    width:40%;
-    margin:0px 70px;
-    font-size: 10px;
-    color:#969666
+.profile .pimage h2,.profile .pimage h4{
+    margin:0px 20px
 }
+.profile .pimage h6{
+    margin:40px 20px -20px 10px;
+    color: #9a9a9a;
 
-.profile .propimage .propicon {
-    margin-top: 30px;
-    display:flex;
-    margin-left:0px;
-    margin-bottom: 50px;
 }
-.profile .propimage .propicon li {
+.profile .pimage p{
+    margin:0px 20px;
+    color:#9a9a9a;
+    font-size: 12px;
+}
+.profile .pimage .icon{
+    margin-top: 20px;
+    display:flex;
+}
+.profile .pimage .icon li{
     margin-left:20px;
     list-style: none;
     padding: 10px 10px;
@@ -31,7 +38,29 @@ p {
     cursor: pointer;
     transition: 0.5s;
 }
-.profile .propimage .propicon li:hover {
+.profile .pimage .icon li:hover{
+    background:#0989ff;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* / */
+
+.footer .container .about .detail .icon{
+    margin-top: 20px;
+    display:flex;
+}
+.footer .container .about .detail .icon li{
+    margin-left:20px;
+    list-style: none;
+    padding: 10px 10px;
+    box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.footer .container .about .detail .icon li:hover{
     background:#0989ff;
     color:#fff;
     border-radius: 5px;

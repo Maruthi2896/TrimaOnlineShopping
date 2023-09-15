@@ -17,6 +17,10 @@
 }
 .footer .container .about{
     max-width:30%;
+    margin-left: -5%;
+}
+.footer .container .about .logo img{
+    width:300px;
 }
 .footer .container .about .detail p{
      margin-top: 20px;
@@ -87,3 +91,7 @@
 .footer .container .page ul li:hover{
   color:#0989ff;
 }
+.footer .link{
+    display: flex;
+    justify-content: center;
+  }

@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 import { BsBagCheck } from "react-icons/bs";
 
 import "./navbar.css";
-export const Navbar = ({searchbtn}) => {
-  const  [search,setSearch]=useState();
+export const Navbar = ({ searchbtn }) => {
+  const [search, setSearch] = useState();
   const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
   return (
     <>
@@ -16,22 +16,28 @@ export const Navbar = ({searchbtn}) => {
         <div className="icon">
           <FaTruckMoving />
         </div>
-        <p> FREE! shipping when shopping more than Rs.600. Each product you buy will contributes Rs.20 to Triveni Childern Education Trust</p>
+        <p>
+          {" "}
+          FREE! shipping when shopping more than Rs.600. Each product you buy
+          will contributes Rs.20 to Triveni Childern Education Trust
+        </p>
       </div>
       <div className="main-header">
         <div className="container">
           <div className="logo">
-            <img src="./assests/logo3.jpeg" alt="logo" />
+            <img src="./assests/logo1.png" alt="logo" />
           </div>
           <div className="search-box">
             <input
               type="text"
-              value={search} 
+              value={search}
               placeholder="Search product categories..."
               autoComplete="off"
-              onChange={(e)=>{setSearch(e.target.value)} }
+              onChange={(e) => {
+                setSearch(e.target.value);
+              }}
             />
-            <button onClick={()=>searchbtn(search)}>Search</button>
+            <button onClick={() => searchbtn(search)}>Search</button>
           </div>
           <div className="icon">
             {isAuthenticated && (
@@ -88,11 +94,12 @@ export const Navbar = ({searchbtn}) => {
                   logout({ logoutParams: { returnTo: window.location.origin } })
                 }
               >
-               Logout <CiLogout />
+                Logout <CiLogout />
               </button>
             ) : (
               <button onClick={() => loginWithRedirect()}>
-                Login<CiLogin />
+                Login
+                <CiLogin />
               </button>
             )}
           </div>

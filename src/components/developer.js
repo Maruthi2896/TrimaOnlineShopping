@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 import { BiLogoFacebook, BiLogoGithub } from "react-icons/bi";
 import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 
-const developer = () => {
+const Developer = () => {
   return (
     <>
       <div className="profile">
-        <div className="propimage">
+        <div className="pimage">
           <img src="./assests/maruthiTripPic.jpg" alt="maruthi K j" />
           <h2>Maruthi K J</h2>
           <h4>Fullstack web developer</h4>
           <p>Guvi-Zen Certified</p>
-          <div className="propicon">
+          <div className="icon">
             <li>
               <Link to="https://github.com/Maruthi2896">
                 <BiLogoGithub />
@@ -33,10 +33,11 @@ const developer = () => {
               <AiOutlineTwitter />
             </li>
           </div>
+          <h6>For More Projects visit my Git Profile find Project Urls repository copy the links and check them in Crome</h6>
         </div>
       </div>
     </>
   );
 };
 
-export default developer;
+export default Developer;

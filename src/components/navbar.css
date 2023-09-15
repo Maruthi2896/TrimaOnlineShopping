@@ -37,6 +37,9 @@ width:100%;
         display:flex;
         justify-content: space-between;
     }
+    .main-header .container .logo img{
+        width:300px;
+    }
     .main-header .container .search-box{
         margin-right:30px;
      
