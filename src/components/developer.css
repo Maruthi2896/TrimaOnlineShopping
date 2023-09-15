@@ -1,0 +1,39 @@
+.profile .propimage img {
+    width:40%;
+    padding:20px 40px;
+    margin:10px 20px;
+}
+.profile{
+   margin-left: 40%;
+}
+h2,h4{
+    width:40%;
+    margin:0px 70px;
+}
+p {
+    width:40%;
+    margin:0px 70px;
+    font-size: 10px;
+    color:#969666
+}
+
+.profile .propimage .propicon {
+    margin-top: 30px;
+    display:flex;
+    margin-left:0px;
+    margin-bottom: 50px;
+}
+.profile .propimage .propicon li {
+    margin-left:20px;
+    list-style: none;
+    padding: 10px 10px;
+    box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.profile .propimage .propicon li:hover {
+    background:#0989ff;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
